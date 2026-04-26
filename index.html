@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RKH Executive Dashboard Portal</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div>
+      <h1>RKH Executive Overview</h1>
+      <p>Secure internal dashboard navigation and compliance overview portal</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="active">Executive Overview</a>
+      <a href="compliance.html">QR to RKH Compliance</a>
+      <a href="subcontractors.html">RKH to Subcontractors</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">Internal Access Only</span>
+        <h2>Executive Dashboard Command Center</h2>
+        <p>
+          Centralized overview for operational performance, compliance monitoring,
+          departmental reporting, subcontractor performance, KPI tracking, and executive decision support.
+        </p>
+      </div>
+      <div class="security-panel">
+        <h3>Security Controls Enabled</h3>
+        <ul>
+          <li>Strict Content Security Policy</li>
+          <li>No external scripts or CDN dependencies</li>
+          <li>Safe client-side navigation</li>
+          <li>No inline JavaScript execution</li>
+          <li>Input sanitization for search filtering</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid cards">
+      <article class="card">
+        <h3>Operations Dashboard</h3>
+        <p>Monitor service performance, operational risks, station activity, and SLA indicators.</p>
+        <a class="btn" href="compliance.html#operations">Open Overview</a>
+      </article>
+
+      <article class="card">
+        <h3>KPI / KPR Dashboard</h3>
+        <p>Track performance calculations, deductions, downtime impact, and contractual compliance.</p>
+        <a class="btn" href="subcontractors.html#kpi">Open Overview</a>
+      </article>
+
+      <article class="card">
+        <h3>Compliance Dashboard</h3>
+        <p>View QR compliance, audit readiness, department responsibilities, and governance status.</p>
+        <a class="btn" href="compliance.html">Open Compliance</a>
+      </article>
+
+      <article class="card">
+        <h3>Subcontractor Dashboard</h3>
+        <p>Navigate to each subcontractor overview, performance summary, issue trends, and actions.</p>
+        <a class="btn" href="subcontractors.html">Open Subcontractors</a>
+      </article>
+    </section>
+
+    <section class="overview">
+      <h2>Overall Executive Summary</h2>
+      <div class="metric-grid">
+        <div class="metric">
+          <span>Operational Visibility</span>
+          <strong>High</strong>
+        </div>
+        <div class="metric">
+          <span>Compliance Monitoring</span>
+          <strong>Active</strong>
+        </div>
+        <div class="metric">
+          <span>Subcontractor Tracking</span>
+          <strong>Enabled</strong>
+        </div>
+        <div class="metric">
+          <span>Risk Review</span>
+          <strong>Ongoing</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>RKH Internal Portal • Secure static frontend template</p>
+  </footer>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

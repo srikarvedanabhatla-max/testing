@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RKH to Subcontractor Navigation</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div>
+      <h1>RKH to Subcontractors</h1>
+      <p>Subcontractor overview, navigation, KPI/KPR tracking, and performance governance</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Executive Overview</a>
+      <a href="compliance.html">QR to RKH Compliance</a>
+      <a href="subcontractors.html" class="active">RKH to Subcontractors</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">Subcontractor Management</span>
+        <h2>RKH to Subcontractor Overview</h2>
+        <p>
+          Navigate from RKH management overview to each subcontractor, including
+          performance summary, KPI/KPR monitoring, contractual issues, downtime,
+          and action tracking.
+        </p>
+      </div>
+      <div class="security-panel" id="kpi">
+        <h3>KPI / KPR Focus</h3>
+        <p>
+          Supports deduction review, downtime impact analysis, SLA compliance,
+          and performance variance tracking.
+        </p>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <label for="subconSearch">Search Subcontractor</label>
+      <input id="subconSearch" type="search" maxlength="40" placeholder="Search subcontractor safely..." autocomplete="off">
+    </section>
+
+    <section class="grid cards" id="subcontractorList">
+      <article class="card subcon-card" data-name="acifm station vac lighting">
+        <h3>ACIFM</h3>
+        <p><strong>Scope:</strong> Station VAC and Lighting</p>
+        <p>Track asset downtime, SLA breaches, corrective actions, and service quality.</p>
+        <a class="btn" href="#acifm">Open ACIFM</a>
+      </article>
+
+      <article class="card subcon-card" data-name="smc pid pas">
+        <h3>SMC</h3>
+        <p><strong>Scope:</strong> PID and PAS Systems</p>
+        <p>Review display system performance, announcement availability, incidents, and response time.</p>
+        <a class="btn" href="#smc">Open SMC</a>
+      </article>
+
+      <article class="card subcon-card" data-name="konne vhts lifts escalators">
+        <h3>KONNE</h3>
+        <p><strong>Scope:</strong> VHTS / Vertical Transportation</p>
+        <p>Monitor lift and escalator availability, fault frequency, downtime, and maintenance response.</p>
+        <a class="btn" href="#konne">Open KONNE</a>
+      </article>
+
+      <article class="card subcon-card" data-name="cleaning facility soft services">
+        <h3>Cleaning / Soft Services</h3>
+        <p><strong>Scope:</strong> Station cleanliness and soft service delivery</p>
+        <p>Track inspections, non-conformities, service levels, and corrective actions.</p>
+        <a class="btn" href="#cleaning">Open Cleaning</a>
+      </article>
+
+      <article class="card subcon-card" data-name="security crowd management">
+        <h3>Security Services</h3>
+        <p><strong>Scope:</strong> Security and crowd support</p>
+        <p>Review attendance, incident reporting, patrol compliance, and response effectiveness.</p>
+        <a class="btn" href="#security">Open Security</a>
+      </article>
+
+      <article class="card subcon-card" data-name="mep civil station systems">
+        <h3>MEP / Civil Support</h3>
+        <p><strong>Scope:</strong> MEP, civil, and station support works</p>
+        <p>Analyze work orders, defect closure, recurring failures, and service reliability.</p>
+        <a class="btn" href="#mep">Open MEP</a>
+      </article>
+    </section>
+
+    <section class="overview">
+      <h2>Subcontractor Governance Flow</h2>
+      <div class="timeline">
+        <div><strong>1</strong><span>Work order / incident captured</span></div>
+        <div><strong>2</strong><span>Asset and subcontractor mapped</span></div>
+        <div><strong>3</strong><span>Downtime and KPI impact calculated</span></div>
+        <div><strong>4</strong><span>Deduction or compliance status reviewed</span></div>
+        <div><strong>5</strong><span>Management action and closure tracked</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>RKH Subcontractor Portal • Internal use only</p>
+  </footer>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

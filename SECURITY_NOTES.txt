@@ -1,0 +1,23 @@
+SECURITY NOTES FOR RKH SECURE DASHBOARD PORTAL
+
+This frontend template is hardened for a static website, but real protection from external access must be enforced on the server/network side.
+
+Recommended production controls:
+1. Host only behind VPN, SSO, reverse proxy authentication, or corporate intranet.
+2. Use HTTPS only with HSTS enabled at server level.
+3. Add server headers:
+   - Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+   - X-Content-Type-Options: nosniff
+   - X-Frame-Options: DENY
+   - Referrer-Policy: no-referrer
+   - Permissions-Policy: geolocation=(), camera=(), microphone=()
+4. Never store passwords, API keys, tokens, or database credentials in HTML/CSS/JS.
+5. Use backend role-based access control for executive, department, and subcontractor pages.
+6. Log access attempts and review failed login attempts.
+7. Keep Power BI / dashboard embed links protected using secure embed, SSO, or token-based backend validation.
+8. Do not use public iframe embedding without authentication.
+9. Keep dependencies local and updated.
+10. Add Web Application Firewall rules if exposed through the internet.
+
+Important:
+HTML, CSS, and JavaScript alone cannot fully stop external access. They can reduce client-side attack risk, but authentication and authorization must be handled by the backend/server.
